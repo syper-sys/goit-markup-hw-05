@@ -336,7 +336,7 @@
                             <div class="portfolio-img-wrap">
                                 <img src="./images/banking_app.png" alt="banking app"
                                 width="360" height="300">
-                                <p class="overlay-text">
+                                <p class="portfolio-overlay-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                                 </p>
                             </div>
@@ -352,7 +352,7 @@
                             <div class="portfolio-img-wrap">
                                 <img src="./images/cashless_payment.png" alt="cashless payment"
                                 width="360" height="300">
-                                <p class="overlay-text">
+                                <p class="portfolio-overlay-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                                 </p>
                             </div>
@@ -368,7 +368,7 @@
                             <div class="portfolio-img-wrap">
                                 <img src="./images/meditation_app.png" alt="meditation app"
                                 width="360" height="300">
-                                <p class="overlay-text">
+                                <p class="portfolio-overlay-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                                 </p>
                             </div>
@@ -384,7 +384,7 @@
                             <div class="portfolio-img-wrap">
                                 <img src="./images/taxi_service.png" alt="taxi service"
                                 width="360" height="300">
-                                <p class="overlay-text">
+                                <p class="portfolio-overlay-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                                 </p>
                             </div>
@@ -400,7 +400,7 @@
                             <div class="portfolio-img-wrap">
                                 <img src="./images/screen_illustations.png" alt="screen illustations"
                                 width="360" height="300">
-                                <p class="overlay-text">
+                                <p class="portfolio-overlay-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                                 </p>
                             </div>
@@ -416,7 +416,7 @@
                             <div class="portfolio-img-wrap">
                                 <img src="./images/online_courses.png" alt="online courses"
                                 width="360" height="300">
-                                <p class="overlay-text">
+                                <p class="portfolio-overlay-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                                 </p>
                             </div>
@@ -485,16 +485,77 @@
                 <div class="form-subscribe">
                     <p class="footer-form-title">Subscribe</p>
                     <form class="footer-form">
-                            <input class="footer-form-input" type="email" name="subscribe" placeholder="E-mail">
-                            <button type="submit" class="footer-form-button">
-                                Subscribe
-                                <svg class="footer-button-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-telegram"></use>
-                                </svg>
-                            </button>
+                        <input class="footer-form-input" type="email" name="subscribe" placeholder="E-mail">
+                        <button type="submit" class="footer-form-button">
+                            Subscribe
+                            <svg class="footer-button-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
         </footer>
+
+        <div class="overlay is-open">
+            <div class="overlay-container">
+                <button type="button" class="overlay-close">
+                    <svg class="overlay-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-btn_close"></use>
+                    </svg>
+                </button>
+
+                <p class="overlay-text">Leave your contacts and we will call you back</p>
+                <form class="overlay-form">
+                    <div class="overlay-field">
+                        <label for="user-name" class="overlay-label">Name</label>
+                        <div class="overlay-wrapper">
+                            <input type="text" id="user-name" name="user-name" class="overlay-input" required>
+                            <svg class="overlay-input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="overlay-field">
+                        <label for="user-tel" class="overlay-label">Phone</label>
+                        <div class="overlay-wrapper">
+                            <input type="tel" id="user-tel" name="user-tel" class="overlay-input" required>
+                            <svg class="overlay-input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="overlay-field">
+                        <label for="user-email" class="overlay-label">Email</label>
+                        <div class="overlay-wrapper">
+                            <input type="email" id="user-email" name="user-email" class="overlay-input" required>
+                            <svg class="overlay-input-icon" width="18" height="24px">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="overlay-field">
+                        <label for="user-comment" class="overlay-label">Comment</label>
+                        <textarea name="user-comment" id="user-comment" class="overlay-textarea" placeholder="Text input"></textarea>
+                    </div>
+
+                    <input type="checkbox" name="policy" id="policy" required value="true" class="overlay-check visually-hidden">
+                    <label for="policy" class="overlay-check-label">
+                        <span class="span-checkbox">
+                            <svg width="10" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the&nbsp;
+                        <a href="" class="privacy">Privacy Policy</a>
+                    </label>
+
+                    <button type="submit" class="overlay-button">Send</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
