@@ -340,8 +340,6 @@ img {
 }
 
 .section-team-icon {
-    width: 16px;
-    height: 16px;
     fill: #f4f4fd;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -394,7 +392,7 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-item:hover .overlay-text{
+.portfolio-item:hover .portfolio-overlay-text{
     transform: translateY(0%);
 }
 
@@ -532,8 +530,6 @@ img {
 }
 
 .footer-social-icon {
-    width: 24px;
-    height: 24px;
     fill: #f4f4fd;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -545,11 +541,12 @@ img {
 }
 
 .footer-form-title {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 16px;
 }
 
@@ -559,7 +556,12 @@ img {
 }
 
 .footer-form-input {
-    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
     border: 1px solid #ffffff;
     border-radius: 4px;
     width: 264px;
@@ -567,9 +569,10 @@ img {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     padding-left: 16px;
     background-color: transparent;
+    outline: none;
 }
 
-.footer-form-input:focus::placeholder{
+.footer-form-input::placeholder{
     color: #ffffff;
 }
 
